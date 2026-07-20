@@ -17,8 +17,7 @@ openBtn.addEventListener('click', () => {
   if (opened) return;
   opened = true;
   loader.classList.add('open');
-  setTimeout(() => { loader.classList.add('hide'); invitation.classList.add('ready'); invitation.setAttribute('aria-hidden', 'false'); window.scrollTo(0, 0); }, 1050);
-  setTimeout(playMusic, 20000);
+  setTimeout(() => { loader.classList.add('hide'); invitation.classList.add('ready'); invitation.setAttribute('aria-hidden', 'false'); window.scrollTo(0, 0); playMusic();}, 1050);
 });
 
 musicToggle.addEventListener('click', () => {
